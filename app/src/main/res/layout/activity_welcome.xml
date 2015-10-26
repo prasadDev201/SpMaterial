@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:id="@+id/relativeLayoutmain">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        android:id="@+id/buttonRecycle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card View"
+        android:id="@+id/buttonCardview"
+        android:layout_below="@+id/buttonRecycle"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shadow &amp; Clipping View"
+        android:id="@+id/buttonShadowClipview"
+        android:layout_below="@+id/buttonCardview"
+        android:layout_centerHorizontal="true"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working With Drawables"
+        android:id="@+id/buttonDrawable"
+        android:layout_below="@+id/buttonShadowClipview"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Animation"
+        android:id="@+id/buttonCustomAnimation"
+        android:layout_below="@+id/buttonDrawable"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backward Compatible"
+        android:id="@+id/buttonBackwardCompatible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToolBar"
+        android:id="@+id/buttonToolbar"
+        android:layout_below="@+id/buttonBackwardCompatible"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

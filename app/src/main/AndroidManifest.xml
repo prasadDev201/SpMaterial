@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="main.materialdesign.spm.materialdesign" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.witsindia.benandbellaatzoo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="main.materialdesign.activities.LaunchScreenActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="main.materialdesign.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name="main.materialdesign.activities.FabHideActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_fab_animations" />
+        <activity
+            android:name="main.materialdesign.activities.ToolbarOverlayActivity"
+            android:label="@string/title_activity_toolbar_test" />
+        <activity
+            android:name="main.materialdesign.activities.NavDrawerActivity"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="main.materialdesign.activities.AnimateToolbar"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="main.materialdesign.activities.TabAnimationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_tab_animation" />
+        <activity
+            android:name="main.materialdesign.activities.NestedToolbarActivity"
+            android:label="@string/title_activity_nested_toolbar" />
+        <activity
+            android:name="main.materialdesign.activities.QuickReturnActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_quick_return" />
+       <!-- <activity
+            android:name="main.materialdesign.activities.RevealAnimation"
+            android:label="@string/title_activity_reveal_animation" />-->
+        <activity
+            android:name="main.materialdesign.activities.GmailStyleActivity"
+            android:label="@string/title_activity_gmail_style" />
+        <activity
+            android:name="main.materialdesign.activities.TabsHeaderActivity"
+            android:label="@string/title_activity_tabs_header"
+            android:theme="@style/MyTheme.Detail" />
+    </application>
+
+</manifest>
